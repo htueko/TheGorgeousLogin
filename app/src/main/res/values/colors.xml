@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="startGradient">#FBAB66</color>
+    <color name="endGradient">#F7418C</color>
+    <color name="tabBackground">#552B2B2B</color>
+    <color name="tabBackgroundSelected">#FFFFFF</color>
+    <color name="tabSelectedTextColor">#020202</color>
+    <color name="textColorPrimary">#EFEFEF</color>
+    <color name="textColorSecondary">#020202</color>
+
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NewFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView_new"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/textColorPrimary"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_person_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/name"
+                    android:src="@drawable/ic_person_black_24dp"
+                    app:layout_constraintBottom_toBottomOf="@id/input_layout_name_new"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/input_layout_name_new" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_name_new"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/name"
+                    android:textColorHint="@color/textColorSecondary"
+                    app:hintTextColor="@color/textColorSecondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_person_new"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_name_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/img_mail_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/email_address"
+                    android:src="@drawable/ic_mail_outline_black_24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/input_layout_mail_new"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/input_layout_mail_new" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_mail_new"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/email_address"
+                    android:textColorHint="@color/textColorSecondary"
+                    app:hintTextColor="@color/textColorSecondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_mail_new"
+                    app:layout_constraintTop_toBottomOf="@id/input_layout_name_new">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_email_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/img_up_lock_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/password"
+                    android:src="@drawable/ic_lock_black_24dp"
+                    app:layout_constraintBottom_toBottomOf="@id/input_layout_password_new"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/input_layout_password_new" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_password_new"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/textColorSecondary"
+                    app:hintTextColor="@color/textColorSecondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_up_lock_new"
+                    app:layout_constraintTop_toBottomOf="@id/input_layout_mail_new"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/textColorSecondary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_password_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/img_down_lock_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/confirmation"
+                    android:src="@drawable/ic_lock_black_24dp"
+                    app:layout_constraintBottom_toBottomOf="@id/input_layout_confirm_password_new"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/input_layout_confirm_password_new" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_confirm_password_new"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/confirmation"
+                    android:textColorHint="@color/textColorSecondary"
+                    app:hintTextColor="@color/textColorSecondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_down_lock_new"
+                    app:layout_constraintTop_toBottomOf="@id/input_layout_password_new"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/textColorSecondary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_confirm_password_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/input_layout_confirm_password_new" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/gradient_background"
+            android:text="@string/sign_up"
+            app:layout_constraintBottom_toBottomOf="@id/materialCardView_new"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/materialCardView_new" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
